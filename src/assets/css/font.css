@@ -1,0 +1,114 @@
+@font-face {
+  font-family: "axiforma-black";
+  src: url("./../fonts/AXIFORMA/Axiforma-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "axiforma-blackitalic";
+  src: url("./../fonts/AXIFORMA/Axiforma-BlackItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "axiforma-bold";
+  src: url("./../fonts/AXIFORMA/Axiforma-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "axiforma-bolditalic";
+  src: url("./../fonts/AXIFORMA/Axiforma-BoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "axiforma-book";
+  src: url("./../fonts/AXIFORMA/Axiforma-Book.ttf") format("truetype");
+}
+@font-face {
+  font-family: "axiforma-booitalic";
+  src: url("./../fonts/AXIFORMA/Axiforma-BookItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "axiforma-extrabold";
+  src: url("./../fonts/AXIFORMA/Axiforma-ExtraBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "axiforma-extrabolditalic";
+  src: url("./../fonts/AXIFORMA/Axiforma-ExtraBoldItalic.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "axiforma-heavy";
+  src: url("./../fonts/AXIFORMA/Axiforma-Heavy.ttf") format("truetype");
+}
+@font-face {
+  font-family: "axiforma-heavyitalic";
+  src: url("./../fonts/AXIFORMA/Axiforma-HeavyItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "axiforma-italic";
+  src: url("./../fonts/AXIFORMA/Axiforma-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "axiforma-light";
+  src: url("./../fonts/AXIFORMA/Axiforma-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "axiforma-lightitalic";
+  src: url("./../fonts/AXIFORMA/Axiforma-LightItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "axiforma-medium";
+  src: url("./../fonts/AXIFORMA/Axiforma-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "axiforma-mediumitalic";
+  src: url("./../fonts/AXIFORMA/Axiforma-MediumItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "axiforma-regular";
+  src: url("./../fonts/AXIFORMA/Axiforma-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "axiforma-semibold";
+  src: url("./../fonts/AXIFORMA/Axiforma-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "axiforma-semibolditalic";
+  src: url("./../fonts/AXIFORMA/Axiforma-SemiBoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "axiforma-thin";
+  src: url("./../fonts/AXIFORMA/Axiforma-Thin.ttf") format("truetype");
+}
+@font-face {
+  font-family: "axiforma-thinitalic";
+  src: url("./../fonts/AXIFORMA/Axiforma-ThinItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "sora-bold";
+  src: url("./../fonts/SORA/Sora-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "sora-extrabold";
+  src: url("./../fonts/SORA/Sora-ExtraBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "sora-extralight";
+  src: url("./../fonts/SORA/Sora-ExtraLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: "sora-light";
+  src: url("./../fonts/SORA/Sora-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "sora-medium";
+  src: url("./../fonts/SORA/Sora-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "sora-regular";
+  src: url("./../fonts/SORA/Sora-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "sora-semibold";
+  src: url("./../fonts/SORA/Sora-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "sora-thin";
+  src: url("./../fonts/SORA/Sora-Thin.ttf") format("truetype");
+}
