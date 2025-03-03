@@ -20,17 +20,22 @@ function Head() {
 
   return (
     <>
-      <section className="flex w-full h-10 bg-gray-800 items-center p-2 font-soraRegular px-40">
+      <section className="flex w-full h-10 bg-gray-800 items-center p-2 font-soraRegular px-4 md:px-40">
         <ul className="flex flex-auto gap-4 text-white text-xs justify-end">
+          {/* Shown on all devices */}
           <li className="hover:text-teal-500 cursor-pointer">Contact Us</li>
-          <li className="hover:text-teal-500 cursor-pointer flex gap-2">
+          <li className="hover:text-teal-500 cursor-pointer">PIMO $10.00</li>
+
+          {/* Hidden on mobile, shown on medium (md) and larger screens */}
+          <li className="hidden md:flex hover:text-teal-500 cursor-pointer gap-2">
             Careers {UpArrow}
           </li>
-          <li className="hover:text-teal-500 cursor-pointer">Sustainability</li>
-          <li className="hover:text-teal-500 cursor-pointer flex gap-2">
+          <li className="hidden md:block hover:text-teal-500 cursor-pointer">
+            Sustainability
+          </li>
+          <li className="hidden md:flex hover:text-teal-500 cursor-pointer gap-2">
             Investors {UpArrow}
           </li>
-          <li className="hover:text-teal-500 cursor-pointer">PIMO $10.00</li>
         </ul>
       </section>
     </>
