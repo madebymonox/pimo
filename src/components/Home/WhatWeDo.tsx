@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router";
 import { motion } from "framer-motion";
 import Slider1 from "./../../assets/images/img1.png";
 import Slider2 from "./../../assets/images/img2.png";
-import Slider3 from "./../../assets/images/img3.png";
+// import Slider3 from "./../../assets/images/img3.png";
 
 function WhatWeDo() {
   const tabs = [

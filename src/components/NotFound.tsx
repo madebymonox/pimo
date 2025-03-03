@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import Head from "./Elements/Nav/Head";
 import Header from "./Elements/Nav/Header";
