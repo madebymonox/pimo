@@ -16,7 +16,7 @@ function Header() {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
-      className="w-4 h-4"
+      className="w-4 h-4 transition-transform duration-300"
     >
       <path
         strokeLinecap="round"
@@ -30,58 +30,106 @@ function Header() {
     {
       title: "Featured Solutions",
       content: [
-        { name: "Energy Transition", description: "Advancing to net-zero" },
-        { name: "Hydrogen Technologies", description: "Accelerating hydrogen" },
-        { name: "Geothermal Solutions", description: "Geothermal expertise" },
+        {
+          name: "Energy Transition",
+          description: "Advancing to net-zero",
+          icon: "🌱",
+        },
+        {
+          name: "Hydrogen Technologies",
+          description: "Accelerating hydrogen",
+          icon: "⚡",
+        },
+        {
+          name: "Geothermal Solutions",
+          description: "Geothermal expertise",
+          icon: "🌋",
+        },
       ],
     },
     {
       title: "Products & Services",
       content: [
-        { name: "Drilling Services", description: "Advanced drilling tech" },
-        { name: "Oilfield Equipment", description: "Reliable oilfield gear" },
-        { name: "Pipeline Management", description: "Pipeline monitoring" },
+        {
+          name: "Drilling Services",
+          description: "Advanced drilling tech",
+          icon: "🛠️",
+        },
+        {
+          name: "Oilfield Equipment",
+          description: "Reliable oilfield gear",
+          icon: "⛽",
+        },
+        {
+          name: "Pipeline Management",
+          description: "Pipeline monitoring",
+          icon: "🔗",
+        },
       ],
     },
     {
       title: "Company",
       content: [
-        { name: "About Us", description: "Our mission and values" },
-        { name: "Careers", description: "Join our team" },
-        { name: "Sustainability", description: "Eco-friendly initiatives" },
+        { name: "About Us", description: "Our mission and values", icon: "🏢" },
+        { name: "Careers", description: "Join our team", icon: "👨‍💻" },
+        {
+          name: "Sustainability",
+          description: "Eco-friendly initiatives",
+          icon: "🌍",
+        },
       ],
     },
   ];
 
   return (
-    <section className="absolute flex w-full min-h-14 h-auto pt-4 bg-white items-end shadow-sm px-40">
+    <section className="flex w-full min-h-14 h-auto pt-4 bg-white items-end shadow-sm px-40">
       <div className="w-full flex justify-between items-center">
+        {/* Logo */}
         <div className="text-2xl font-bold text-gray-800">
           <img src={Logo} alt="Pimo Logo" className="h-14" />
         </div>
-        <ul className="flex gap-6">
+
+        {/* Navigation */}
+        <ul className="flex gap-6 z-auto">
           {navItems.map((item, index) => (
             <li key={index} className="relative">
+              {/* Dropdown Button */}
               <button
                 onClick={() => toggleDropdown(index)}
                 className={`flex items-center gap-2 text-gray-700 hover:text-teal-500 px-2 py-4 font-soraRegular text-sm ${
                   openDropdown === index ? "border-b-2 border-teal-500" : ""
                 }`}
               >
-                {item.title} {DropdownArrow}
+                {item.title}
+                <span
+                  className={`transition-transform ${
+                    openDropdown === index ? "rotate-180" : ""
+                  }`}
+                >
+                  {DropdownArrow}
+                </span>
               </button>
 
+              {/* Dropdown Content */}
               {openDropdown === index && (
-                <div className="absolute left-0 mt-2 w-[500px] bg-white shadow-xl border rounded-lg p-4 grid grid-cols-3 gap-6">
+                <div className="absolute left-0 mt-2 w-64 bg-white shadow-xl border rounded-lg p-3 z-40">
                   {item.content.map((subItem, subIndex) => (
-                    <div key={subIndex} className="flex flex-col gap-1">
-                      <div className="w-10 h-10 bg-gray-200 rounded-full"></div>
-                      <p className="font-semibold text-gray-800">
-                        {subItem.name}
-                      </p>
-                      <p className="text-gray-500 text-sm">
-                        {subItem.description}
-                      </p>
+                    <div
+                      key={subIndex}
+                      className="flex items-center gap-4 p-2 hover:bg-gray-100 cursor-pointer rounded-lg transition"
+                    >
+                      {/* Icon */}
+                      <div className="text-2xl">{subItem.icon}</div>
+
+                      {/* Text Content */}
+                      <div>
+                        <p className="font-semibold text-gray-800 font-axiformaMedium text-sm">
+                          {subItem.name}
+                        </p>
+                        <p className="text-gray-500 text-xs font-soraRegular">
+                          {subItem.description}
+                        </p>
+                      </div>
                     </div>
                   ))}
                 </div>
