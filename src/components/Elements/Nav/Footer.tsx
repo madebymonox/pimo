@@ -14,14 +14,14 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-start space-y-8 md:space-y-0">
         {/* Logo Section */}
         <div className="flex flex-col items-center md:items-start mb-8 md:mb-0">
-          <img src={Logo} alt="Pimo Mufasa" className="w-32 md:w-40" />
+          <img src={Logo} alt="Pimo Mafuta" className="w-32 md:w-40" />
         </div>
 
         {/* Links Section */}
         <div className="grid grid-cols-2 md:flex gap-8 md:gap-60 text-center md:text-left font-axiformaBook text-sm">
           <div className="mb-6 md:mb-0">
             <h4 className="text-white font-semibold mb-3 md:mb-2">
-              More Pimo Mufasa
+              More Pimo Mafuta
             </h4>
             <ul className="space-y-2 md:space-y-3">
               <li>
@@ -31,12 +31,12 @@ const Footer = () => {
               </li>
               <li>
                 <Link to={""} className="hover:text-white block py-1 md:py-0">
-                  Shop Pimo Mufasa
+                  Shop Pimo Mafuta
                 </Link>
               </li>
               <li>
                 <Link to={""} className="hover:text-white block py-1 md:py-0">
-                  Pimo Mufasa Store
+                  Pimo Mafuta Store
                 </Link>
               </li>
             </ul>
@@ -110,7 +110,7 @@ const Footer = () => {
 
       {/* Bottom Links */}
       <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-xs md:text-sm">
-        <span className="order-2 md:order-1">© 2025 Pimo Mufasa Company</span>
+        <span className="order-2 md:order-1">© 2025 Pimo Mafuta Company</span>
         <div className="order-1 md:order-2 flex flex-wrap justify-center gap-3 md:gap-4">
           <Link to={""} className="hover:text-white whitespace-nowrap">
             Cookies
