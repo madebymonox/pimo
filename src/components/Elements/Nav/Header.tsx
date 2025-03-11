@@ -41,22 +41,47 @@ function Header() {
 
   const navItems = [
     {
-      title: "Featured Solutions",
+      title: "Company",
       content: [
         {
-          name: "Energy Transition",
+          name: "About Us",
+          description: "Who we are",
+          icon: "🏢",
+        },
+        {
+          name: "Our Journey",
           description: "Advancing to net-zero",
           icon: "🌱",
         },
         {
-          name: "Hydrogen Technologies",
-          description: "Accelerating hydrogen",
-          icon: "⚡",
+          name: "Leadership Team",
+          description: "The Core of Pimo",
+          icon: "🌋",
+        },
+      ],
+    },
+    {
+      title: "HR",
+      content: [
+        {
+          name: "Careers",
+          description: "Join our team",
+          icon: "🚀",
         },
         {
-          name: "Geothermal Solutions",
-          description: "Geothermal expertise",
-          icon: "🌋",
+          name: "Meet the team",
+          description: "The Adventurers",
+          icon: "🤝",
+        },
+        {
+          name: "Our stories",
+          description: "Learn about our experience",
+          icon: "📖",
+        },
+        {
+          name: "Recruitment",
+          description: "Pipeline monitoring",
+          icon: "🧑‍💼",
         },
       ],
     },
@@ -64,31 +89,24 @@ function Header() {
       title: "Products & Services",
       content: [
         {
-          name: "Drilling Services",
+          name: "Well Construction & Engineering",
           description: "Advanced drilling tech",
           icon: "🛠️",
         },
         {
-          name: "Oilfield Equipment",
-          description: "Reliable oilfield gear",
-          icon: "⛽",
-        },
-        {
-          name: "Pipeline Management",
+          name: "Infrastructure & Asset Integrity",
           description: "Pipeline monitoring",
-          icon: "🔗",
+          icon: "🔧",
         },
       ],
     },
     {
-      title: "Company",
+      title: "Solutions",
       content: [
-        { name: "About Us", description: "Our mission and values", icon: "🏢" },
-        { name: "Careers", description: "Join our team", icon: "👨‍💻" },
         {
-          name: "Sustainability",
-          description: "Eco-friendly initiatives",
-          icon: "🌍",
+          name: "Special Tools",
+          description: "Reliable oilfield gear",
+          icon: "🛢️",
         },
       ],
     },
