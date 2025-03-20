@@ -9,27 +9,27 @@ const HeroSection = () => {
   const slides = [
     {
       image: Slider1,
-      title: "Progress At Scale",
+      title: "Powering the Future of Energy",
       cta: "WATCH NOW",
       cta_url: "",
       description:
-        "Deliver his opening keynote address at the Baker Hughes Annual Meeting 2025.",
+        "Delivering innovative energy solutions with cutting-edge technology, expert engineering, and a commitment to excellence. At Pimo-Mafuta Energies, we drive efficiency, sustainability, and success in the oil and gas industry.",
     },
     {
       image: Slider2,
-      title: "Progress At Shrink",
+      title: "Innovation. Reliability. Performance.",
       cta: "LEARN MORE",
       cta_url: "",
       description:
-        "Deliver his opening keynote address at the Baker Hughes Annual Meeting 2025.",
+        "From well construction to asset integrity, we provide world-class energy services that maximize productivity and ensure operational excellence. Join us in shaping the future of energy.",
     },
     {
       image: Slider3,
-      title: "Progress At Null",
+      title: "Engineering Energy for a Sustainable Tomorrow",
       cta: "EXPLORE",
       cta_url: "",
       description:
-        "Deliver his opening keynote address at the Baker Hughes Annual Meeting 2025.",
+        "With expertise in energy services and infrastructure, we empower businesses with smart, safe, and sustainable solutions. Together, we build a more efficient and resilient energy industry.",
     },
   ];
 

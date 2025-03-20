@@ -1,7 +1,7 @@
 import DiversityCard from "./../Elements/DiversityCard";
-import Slider1 from "./../../assets/images/img1.png";
-import Slider2 from "./../../assets/images/img2.png";
-import Slider3 from "./../../assets/images/img3.png";
+import Slider1 from "./../../assets/images/x.jpeg";
+import Slider2 from "./../../assets/images/y.jpeg";
+import Slider3 from "./../../assets/images/z.jpeg";
 
 function ReportPolicies() {
   const cardsContent = [

@@ -91,11 +91,29 @@ function WhatWeDo() {
             What we do
           </h2>
           <p className="text-gray-600 text-base leading-relaxed mb-4 font-axiformaBook">
-            We develop and deploy the most advanced technologies to serve energy
-            and industrial companies looking for more efficient, more reliable,
-            and cleaner solutions. Our diverse portfolio of technologies and
-            solutions are transforming how industry works today and in the
-            future.
+            At Pimo-Mafuta Energies, we provide cutting-edge energy solutions
+            that drive efficiency, safety, and sustainability in the oil and gas
+            industry. Our expertise spans well construction, engineering,
+            infrastructure development, and asset integrity management, ensuring
+            seamless project execution across offshore and onshore operations.
+          </p>
+          <p className="text-gray-600 text-base leading-relaxed mb-4 font-axiformaBook">
+            We specialize in delivering high-quality energy services, leveraging
+            advanced technology and industry best practices to optimize
+            performance and maximize productivity. Our commitment to innovation
+            allows us to develop tailored solutions that enhance operational
+            reliability, reduce downtime, and improve safety standards.
+          </p>
+          <p className="text-gray-600 text-base leading-relaxed mb-4 font-axiformaBook">
+            Beyond technical excellence, we invest in people—fostering talent,
+            skill diversity, and career growth within a dynamic and inclusive
+            work environment. By integrating expertise with a forward-thinking
+            approach, we help our clients navigate complex energy challenges
+            while contributing to a more sustainable and efficient future.
+          </p>
+          <p className="text-gray-600 text-base leading-relaxed mb-4 font-axiformaBook">
+            At Pimo-Mafuta Energies, we don’t just service the energy sector—we
+            redefine it.
           </p>
         </div>
 

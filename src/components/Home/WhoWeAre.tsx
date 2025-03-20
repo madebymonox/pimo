@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 import { motion } from "framer-motion";
-import WhatWeDo from "./../../assets/images/what-we-do.png";
+import WhatWeDo from "./../../assets/images/whoweare.jpeg";
 
 function WhoWeAre() {
   return (
@@ -13,17 +13,19 @@ function WhoWeAre() {
             Who we are
           </h2>
           <p className="text-gray-600 text-base leading-relaxed mb-4 font-axiformaBook">
-            We are an energy technology company. We understand the demands on
-            energy. What it takes to produce it. How we make use of it. Why it’s
-            essential to reduce its impact. Where we can change to achieve a
-            sustainable balance.
+            At Pimo-Mafuta Energies, we are more than just an energy services
+            company—we are innovators, problem-solvers, and industry leaders
+            dedicated to shaping the future of energy. We understand the
+            complexities of energy production, the importance of efficiency, and
+            the necessity of sustainable solutions.
           </p>
           <p className="text-gray-600 text-base leading-relaxed mb-4 font-axiformaBook">
-            For over a hundred years we have worked with our customers,
-            understanding deeply. Reducing emissions. Innovating new
-            technologies. Driving cleaner energy. Maximizing productivity,
-            improving continuously, bringing digitally-powered optimization to
-            energy and beyond. Taking energy forward.
+            With a strong foundation in well construction, engineering, and
+            asset integrity, we leverage cutting-edge technology, rigorous
+            safety standards, and a deep commitment to excellence to deliver
+            world-class energy solutions. Our team is built on expertise,
+            collaboration, and a culture that values continuous learning and
+            development.
           </p>
           <Link
             to={"#"}

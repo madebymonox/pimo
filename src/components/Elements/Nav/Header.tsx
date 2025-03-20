@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router";
 import Logo from "./../../../assets/images/logo.png";
 import "./../../../App.css";
 
@@ -45,16 +46,19 @@ function Header() {
       content: [
         {
           name: "About Us",
+          link: "/about",
           description: "Who we are",
           icon: "🏢",
         },
         {
           name: "Our Journey",
+          link: "/about",
           description: "Advancing to net-zero",
           icon: "🌱",
         },
         {
           name: "Leadership Team",
+          link: "/about",
           description: "The Core of Pimo",
           icon: "🌋",
         },
@@ -65,21 +69,25 @@ function Header() {
       content: [
         {
           name: "Careers",
+          link: "/careers",
           description: "Join our team",
           icon: "🚀",
         },
         {
           name: "Meet the team",
+          link: "/careers",
           description: "The Adventurers",
           icon: "🤝",
         },
         {
           name: "Our stories",
+          link: "/careers",
           description: "Learn about our experience",
           icon: "📖",
         },
         {
           name: "Recruitment",
+          link: "/career",
           description: "Pipeline monitoring",
           icon: "🧑‍💼",
         },
@@ -90,11 +98,13 @@ function Header() {
       content: [
         {
           name: "Well Construction & Engineering",
+          link: "/product",
           description: "Advanced drilling tech",
           icon: "🛠️",
         },
         {
           name: "Infrastructure & Asset Integrity",
+          link: "/product",
           description: "Pipeline monitoring",
           icon: "🔧",
         },
@@ -105,6 +115,7 @@ function Header() {
       content: [
         {
           name: "Special Tools",
+          link: "/solution",
           description: "Reliable oilfield gear",
           icon: "🛢️",
         },
@@ -143,20 +154,22 @@ function Header() {
               {openDropdown === index && (
                 <div className="absolute left-0 mt-2 w-64 bg-white shadow-xl border rounded-lg p-3 z-40">
                   {item.content.map((subItem, subIndex) => (
-                    <div
-                      key={subIndex}
-                      className="flex items-center gap-4 p-2 hover:bg-gray-100 cursor-pointer rounded-lg transition"
-                    >
-                      <div className="text-2xl">{subItem.icon}</div>
-                      <div>
-                        <p className="font-semibold text-gray-800 font-axiformaMedium text-sm">
-                          {subItem.name}
-                        </p>
-                        <p className="text-gray-500 text-xs font-soraRegular">
-                          {subItem.description}
-                        </p>
+                    <Link to={subItem.link}>
+                      <div
+                        key={subIndex}
+                        className="flex items-center gap-4 p-2 hover:bg-gray-100 cursor-pointer rounded-lg transition"
+                      >
+                        <div className="text-2xl">{subItem.icon}</div>
+                        <div>
+                          <p className="font-semibold text-gray-800 font-axiformaMedium text-sm">
+                            {subItem.name}
+                          </p>
+                          <p className="text-gray-500 text-xs font-soraRegular">
+                            {subItem.description}
+                          </p>
+                        </div>
                       </div>
-                    </div>
+                    </Link>
                   ))}
                 </div>
               )}
