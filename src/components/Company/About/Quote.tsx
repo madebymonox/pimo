@@ -3,7 +3,7 @@ import "./../../../App.css";
 function Quote() {
   return (
     <>
-      <section className="w-full bg-white py-16">
+      <section className="w-full bg-white py-28">
         <div className="max-w-6xl mx-auto items-center">
           <div className="md:w-full px-6 text-left space-y-4">
             <span className="flex flex-auto items-center gap-4">

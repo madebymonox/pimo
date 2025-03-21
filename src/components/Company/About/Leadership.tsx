@@ -1,3 +1,4 @@
+import Avater from "./../../../assets/images/avater.jpeg";
 import "./../../../App.css";
 
 function Leadership() {
@@ -24,51 +25,45 @@ function Leadership() {
               <span className="text-center space-y-2">
                 <img
                   className="border border-gray-300 rounded-full"
-                  src={
-                    "https://www.bakerhughes.com/sites/bakerhughes/files/styles/small_1_1_768x768_/public/2023-02/lorenzo_simonelli_crop_4.webp?h=ba7b7286&itok=_gJMdTV9"
-                  }
+                  src={Avater}
                   alt="Directory 1"
                 />
                 <hgroup>
                   <h4 className="font-soraRegular text-teal-500">
-                    Lorenzo Simonelli
+                    Pius Uwhubetiyi
                   </h4>
                   <h6 className="font-axiformaBook text-gray-500 text-xs">
-                    Chairman and CEO
+                    Group Chairman
                   </h6>
                 </hgroup>
               </span>
               <span className="text-center space-y-2">
                 <img
                   className="border border-gray-300 rounded-full"
-                  src={
-                    "https://www.bakerhughes.com/sites/bakerhughes/files/styles/small_1_1_768x768_/public/2025-03/moghal_ahmed_profile_v4.webp?h=f2eda756&itok=Creqbf_R"
-                  }
+                  src={Avater}
                   alt="Directory 1"
                 />
                 <hgroup>
                   <h4 className="font-soraRegular text-teal-500">
-                    Ahmed Moghal
+                    Samantha Bailey
                   </h4>
                   <h6 className="font-axiformaBook text-gray-500 text-xs">
-                    Executive Vice President & Chief Financial Officer
+                    Director
                   </h6>
                 </hgroup>
               </span>
               <span className="text-center space-y-2">
                 <img
                   className="border border-gray-300 rounded-full"
-                  src={
-                    "https://www.bakerhughes.com/sites/bakerhughes/files/styles/small_1_1_768x768_/public/2024-09/a_gatti-bio_picture-rt-090324-2.webp?h=6903eae8&itok=rfLB5Zn_"
-                  }
+                  src={Avater}
                   alt="Directory 1"
                 />
                 <hgroup>
                   <h4 className="font-soraRegular text-teal-500">
-                    Amerino Gatti
+                    Victor Momoh
                   </h4>
                   <h6 className="font-axiformaBook text-gray-500 text-xs">
-                    Executive Vice President of Oilfield Services & Equipment
+                    General Manager Operations
                   </h6>
                 </hgroup>
               </span>

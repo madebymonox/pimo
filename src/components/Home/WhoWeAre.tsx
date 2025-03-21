@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 import { motion } from "framer-motion";
-import WhatWeDo from "./../../assets/images/whoweare.jpeg";
+import WhatWeDo from "./../../assets/images/img2.jpg";
 
 function WhoWeAre() {
   return (

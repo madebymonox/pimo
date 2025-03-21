@@ -25,3 +25,20 @@
   transform: translateY(-20px);
   transition: all 300ms ease-in-out;
 }
+
+.bgImage {
+  background-image: url("./assets/images/bg-about.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.bgOverlay {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Semi-transparent background for the content */
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  -webkit-backdrop-filter: blur(10px); /* For older browsers */
+}

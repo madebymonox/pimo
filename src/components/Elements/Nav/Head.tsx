@@ -1,4 +1,5 @@
 import "./../../../App.css";
+import { Link } from "react-router-dom";
 
 function Head() {
   const UpArrow = (
@@ -24,17 +25,18 @@ function Head() {
         <ul className="flex flex-auto gap-4 text-white text-xs justify-end">
           {/* Shown on all devices */}
           <li className="hover:text-teal-500 cursor-pointer">Contact Us</li>
-          <li className="hover:text-teal-500 cursor-pointer">PIMO $10.00</li>
 
           {/* Hidden on mobile, shown on medium (md) and larger screens */}
           <li className="hidden md:flex hover:text-teal-500 cursor-pointer gap-2">
             Careers {UpArrow}
           </li>
           <li className="hidden md:block hover:text-teal-500 cursor-pointer">
-            Sustainability
-          </li>
-          <li className="hidden md:flex hover:text-teal-500 cursor-pointer gap-2">
-            Investors {UpArrow}
+            <Link
+              target="_blank"
+              to={"https://www.linkedin.com/company/pimo-mafuta-energies"}
+            >
+              LinkedIn
+            </Link>
           </li>
         </ul>
       </section>
