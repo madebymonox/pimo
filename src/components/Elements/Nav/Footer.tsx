@@ -14,7 +14,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-start space-y-8 md:space-y-0">
         {/* Logo Section */}
         <div className="flex flex-col items-center md:items-start mb-8 md:mb-0">
-          <img src={Logo} alt="Pimo Mafuta" className="w-32 md:w-40" />
+          <img src={Logo} alt="Pimo Mafuta" className="w-40 md:w-60" />
         </div>
 
         {/* Links Section */}

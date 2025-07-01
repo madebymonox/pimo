@@ -48,19 +48,16 @@ function Header() {
           name: "About Us",
           link: "/about",
           description: "Who we are",
-          icon: "🏢",
         },
         {
           name: "Our Journey",
           link: "/about",
           description: "Advancing to net-zero",
-          icon: "🌱",
         },
         {
           name: "Leadership Team",
           link: "/about",
           description: "The Core of Pimo",
-          icon: "🌋",
         },
       ],
     },
@@ -71,25 +68,11 @@ function Header() {
           name: "Careers",
           link: "/careers",
           description: "Join our team",
-          icon: "🚀",
-        },
-        {
-          name: "Meet the team",
-          link: "/careers",
-          description: "The Adventurers",
-          icon: "🤝",
         },
         {
           name: "Our stories",
           link: "/careers",
           description: "Learn about our experience",
-          icon: "📖",
-        },
-        {
-          name: "Recruitment",
-          link: "/career",
-          description: "Pipeline monitoring",
-          icon: "🧑‍💼",
         },
       ],
     },
@@ -100,13 +83,11 @@ function Header() {
           name: "Well Construction & Engineering",
           link: "/product",
           description: "Advanced drilling tech",
-          icon: "🛠️",
         },
         {
           name: "Infrastructure & Asset Integrity",
           link: "/product",
           description: "Pipeline monitoring",
-          icon: "🔧",
         },
       ],
     },
@@ -117,7 +98,6 @@ function Header() {
           name: "Special Tools",
           link: "/solution",
           description: "Reliable oilfield gear",
-          icon: "🛢️",
         },
       ],
     },
@@ -159,7 +139,6 @@ function Header() {
                         key={subIndex}
                         className="flex items-center gap-4 p-2 hover:bg-gray-100 cursor-pointer rounded-lg transition"
                       >
-                        <div className="text-2xl">{subItem.icon}</div>
                         <div>
                           <p className="font-semibold text-gray-800 font-axiformaMedium text-sm">
                             {subItem.name}
@@ -243,7 +222,6 @@ function Header() {
                         key={subIndex}
                         className="flex items-center gap-4 p-2 hover:bg-gray-100 cursor-pointer rounded-lg transition"
                       >
-                        <div className="text-2xl">{subItem.icon}</div>
                         <div>
                           <p className="font-semibold text-gray-800 font-axiformaMedium text-sm">
                             {subItem.name}
