@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router";
+// import { Link } from "react-router-dom";
 import Logo from "./../../../assets/images/logo.png";
 import "./../../../App.css";
 
@@ -108,7 +109,9 @@ function Header() {
       <div className="w-full flex justify-between items-center">
         {/* Logo */}
         <div className="text-2xl font-bold text-gray-800">
-          <img src={Logo} alt="Pimo Logo" className="h-14" />
+          <Link to="/">
+            <img src={Logo} alt="Pimo Logo" className="h-14" />
+          </Link>
         </div>
 
         {/* Desktop Navigation */}
