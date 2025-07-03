@@ -16,7 +16,7 @@ const tabs = [
   { key: "cwd", label: "Casing While Drilling (CWD)" },
 ];
 
-function TabSelector() {
+function Construction() {
   const [active, setActive] = useState("trs");
 
   // Swap whatever you like here – JSX, whole components, etc.
@@ -347,4 +347,4 @@ function TabSelector() {
   );
 }
 
-export default TabSelector;
+export default Construction;
