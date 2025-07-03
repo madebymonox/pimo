@@ -1,6 +1,6 @@
 import { useState } from "react";
 import trsImage from "./../../assets/images/PHOTO 3.jpg";
-import pdsImage from "./../../assets/images/PHOTO 6.JPG";
+import pdsImage from "./../../assets/images/PHOTO 6.jpg";
 import omsImage from "./../../assets/images/PHOTO 5.jpg";
 import casImage from "./../../assets/images/PHOTO 7.jpg";
 import tisImage from "./../../assets/images/PHOTO 8.jpg";
