@@ -105,7 +105,7 @@ function Header() {
   ];
 
   return (
-    <section className="flex w-full min-h-14 h-auto pt-4 bg-white items-end shadow-sm px-4 md:px-40">
+    <section className="flex w-full min-h-14 h-auto py-4 bg-white items-end shadow-sm px-4 md:px-40">
       <div className="w-full flex justify-between items-center">
         {/* Logo */}
         <div className="text-2xl font-bold text-gray-800">

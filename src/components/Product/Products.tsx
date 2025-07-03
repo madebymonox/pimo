@@ -1,5 +1,7 @@
 import Head from "../Elements/Nav/Head";
 import Header from "../Elements/Nav/Header";
+import Footer from "./../Elements/Nav/Footer";
+import TabSelector from "./TabSelector";
 import "./../../App.css";
 
 function Products() {
@@ -7,6 +9,8 @@ function Products() {
     <>
       <Head />
       <Header />
+      <TabSelector />
+      <Footer />
     </>
   );
 }
