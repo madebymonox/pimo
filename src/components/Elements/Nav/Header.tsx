@@ -82,12 +82,12 @@ function Header() {
       content: [
         {
           name: "Well Construction & Engineering",
-          link: "/product",
+          link: "/product?type=construction",
           description: "Advanced drilling tech",
         },
         {
           name: "Infrastructure & Asset Integrity",
-          link: "/product",
+          link: "/product?type=infrastructure",
           description: "Pipeline monitoring",
         },
       ],

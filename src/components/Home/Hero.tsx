@@ -75,7 +75,7 @@ const HeroSection = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30">
             <div className="absolute inset-0 flex flex-col justify-center items-start text-white px-4 lg:px-8 xl:px-16">
               <div className="max-w-4xl space-y-4 m-auto text-center group">
-                <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold leading-tight font-soraExtraBold">
+                <h1 className="text-4xl md:text-5xl lg:text-5xl leading-tight font-soraExtraBold">
                   {slide.title}
                 </h1>
                 <p className="text-lg md:text-base max-w-2xl leading-relaxed font-axiformaBook">
