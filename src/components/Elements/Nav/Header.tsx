@@ -57,7 +57,7 @@ function Header() {
         },
         {
           name: "Leadership Team",
-          link: "/about/leadership",
+          link: "#",
           description: "The Core of Pimo",
         },
       ],
@@ -96,8 +96,8 @@ function Header() {
       title: "Solutions",
       content: [
         {
-          name: "Special Tools",
-          link: "/solution",
+          name: "Technical Tools",
+          link: "#",
           description: "Reliable oilfield gear",
         },
       ],
@@ -145,9 +145,6 @@ function Header() {
                         <div>
                           <p className="font-semibold text-gray-800 font-axiformaMedium text-sm">
                             {subItem.name}
-                          </p>
-                          <p className="text-gray-500 text-xs font-soraRegular">
-                            {subItem.description}
                           </p>
                         </div>
                       </div>
