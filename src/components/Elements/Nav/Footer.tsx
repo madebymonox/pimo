@@ -1,12 +1,6 @@
-import Logo from "./../../../assets/images/logo-white.jpg";
+import Logo from "./../../../assets/images/logo-white.png";
 import { Link } from "react-router-dom";
-import {
-  FaLinkedin,
-  FaXTwitter,
-  FaYoutube,
-  FaPinterest,
-  FaInstagram,
-} from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -25,17 +19,23 @@ const Footer = () => {
             </h4>
             <ul className="space-y-2 md:space-y-3">
               <li>
-                <Link to={""} className="hover:text-white block py-1 md:py-0">
-                  Rig Count
+                <Link
+                  to={"/product?type=construction"}
+                  className="hover:text-white block py-1 md:py-0"
+                >
+                  Well Construction & Engineering
                 </Link>
               </li>
               <li>
                 <Link to={""} className="hover:text-white block py-1 md:py-0">
-                  Shop Pimo Mafuta
+                  Infrastructure & Asset Integrity
                 </Link>
               </li>
               <li>
-                <Link to={""} className="hover:text-white block py-1 md:py-0">
+                <Link
+                  to={"/product?type=infrastructure"}
+                  className="hover:text-white block py-1 md:py-0"
+                >
                   Pimo Mafuta Store
                 </Link>
               </li>
@@ -52,7 +52,10 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to={""} className="hover:text-white block py-1 md:py-0">
+                <Link
+                  to={"/about/leadership"}
+                  className="hover:text-white block py-1 md:py-0"
+                >
                   Company Leadership
                 </Link>
               </li>
@@ -78,30 +81,6 @@ const Footer = () => {
           >
             <FaLinkedin className="text-gray-400 hover:text-white text-lg" />
           </Link>
-          <Link
-            to={""}
-            className="p-2 rounded-full border border-gray-500 hover:border-white transition-colors"
-          >
-            <FaXTwitter className="text-gray-400 hover:text-white text-lg" />
-          </Link>
-          <Link
-            to={""}
-            className="p-2 rounded-full border border-gray-500 hover:border-white transition-colors"
-          >
-            <FaYoutube className="text-gray-400 hover:text-white text-lg" />
-          </Link>
-          <Link
-            to={""}
-            className="p-2 rounded-full border border-gray-500 hover:border-white transition-colors"
-          >
-            <FaPinterest className="text-gray-400 hover:text-white text-lg" />
-          </Link>
-          <Link
-            to={""}
-            className="p-2 rounded-full border border-gray-500 hover:border-white transition-colors"
-          >
-            <FaInstagram className="text-gray-400 hover:text-white text-lg" />
-          </Link>
         </div>
       </div>
 
@@ -110,7 +89,9 @@ const Footer = () => {
 
       {/* Bottom Links */}
       <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-xs md:text-sm">
-        <span className="order-2 md:order-1">© 2025 Pimo Mafuta Company</span>
+        <span className="order-2 md:order-1">
+          © 2025 Pimo-Mafuta Energies Limited
+        </span>
         <div className="order-1 md:order-2 flex flex-wrap justify-center gap-3 md:gap-4">
           <Link to={""} className="hover:text-white whitespace-nowrap">
             Cookies

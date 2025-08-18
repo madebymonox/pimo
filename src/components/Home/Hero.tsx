@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import Slider1 from "./../../assets/images/img1.jpg";
 import Slider2 from "./../../assets/images/img2.jpg";
 import Slider3 from "./../../assets/images/img3.jpg";
+import Slider4 from "./../../assets/images/img4.jpg";
+import Slider5 from "./../../assets/images/img5.jpg";
 
 const HeroSection = () => {
   const slides = [
@@ -30,6 +32,22 @@ const HeroSection = () => {
       cta_url: "",
       description:
         "With expertise in energy services and infrastructure, we empower businesses with smart, safe, and sustainable solutions. Together, we build a more efficient and resilient energy industry.",
+    },
+    {
+      image: Slider4,
+      title: "Driving Progress Through Oil & Gas Innovation",
+      cta: "LEARN MORE",
+      cta_url: "",
+      description:
+        "From exploration to production, we deliver reliable oil and gas solutions that power industries, create opportunities, and fuel economic growth across the globe.",
+    },
+    {
+      image: Slider5,
+      title: "Trusted Partner in Energy Infrastructure",
+      cta: "DISCOVER",
+      cta_url: "",
+      description:
+        "We build and maintain world-class pipelines, refineries, and offshore facilities, ensuring safety, efficiency, and sustainability at every stage of the energy value chain.",
     },
   ];
 

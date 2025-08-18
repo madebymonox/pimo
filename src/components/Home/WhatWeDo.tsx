@@ -1,85 +1,85 @@
-import { useState } from "react";
-import { Link } from "react-router";
-import { motion } from "framer-motion";
-import Slider1 from "./../../assets/images/img1.png";
-import Slider2 from "./../../assets/images/img2.png";
+// import { useState } from "react";
+// import { Link } from "react-router";
+// import { motion } from "framer-motion";
+// import Slider1 from "./../../assets/images/img1.png";
+// import Slider2 from "./../../assets/images/img2.png";
 // import Slider3 from "./../../assets/images/img3.png";
 
 function WhatWeDo() {
-  const tabs = [
-    {
-      id: "oilfield",
-      title: "Oilfield services & equipment",
-      content: {
-        heading: "Oilfield services & equipment",
-        description:
-          "Our oilfield technology and services help you operate efficiently and predictably, ensuring that projects are executed right the first time and assets consistently perform at peak productivity. Our portfolio is enriched by digitalization, artificial intelligence, and automation capabilities that enable remote operations, reduce risk, and drive decarbonization efforts.",
-        featured: [
-          {
-            title: "Optimize reservoir performance",
-            description:
-              "With the SureCONNECT FE downhole fiber-optic/electric wet-mate system you can optimize reservoir performance with real-time insights.",
-            image: Slider1,
-          },
-          {
-            title: "InvictaSet self-regenerating cement system",
-            description:
-              "Maintain long-term zonal isolation with a cement system that repairs itself.",
-            image: Slider1,
-          },
-        ],
-      },
-    },
-    {
-      id: "lng",
-      title: "Liquefied natural gas (LNG)",
-      content: {
-        heading: "Liquefied natural gas (LNG)",
-        description:
-          "Our LNG solutions provide advanced, cost-effective, and reliable liquefaction technology. We help optimize the production and distribution of liquefied natural gas with state-of-the-art digital monitoring systems and automation.",
-        featured: [
-          {
-            title: "Advanced LNG Liquefaction",
-            description:
-              "Enhancing efficiency in LNG production with next-generation liquefaction technology.",
-            image: Slider2,
-          },
-        ],
-      },
-    },
-    {
-      id: "industrial",
-      title: "Industrial technology",
-      content: {
-        heading: "Industrial technology",
-        description:
-          "Revolutionizing industrial technology with AI-driven automation and efficiency improvements.",
-        featured: [],
-      },
-    },
-    {
-      id: "energy",
-      title: "Energy transition",
-      content: {
-        heading: "Energy transition",
-        description:
-          "Pioneering solutions for a sustainable energy future through decarbonization and alternative energy sources.",
-        featured: [],
-      },
-    },
-    {
-      id: "solutions",
-      title: "Industrial solutions",
-      content: {
-        heading: "Industrial solutions",
-        description:
-          "Providing end-to-end industrial solutions for enhanced performance and sustainability.",
-        featured: [],
-      },
-    },
-  ];
+  // const tabs = [
+  //   {
+  //     id: "oilfield",
+  //     title: "Oilfield services & equipment",
+  //     content: {
+  //       heading: "Oilfield services & equipment",
+  //       description:
+  //         "Our oilfield technology and services help you operate efficiently and predictably, ensuring that projects are executed right the first time and assets consistently perform at peak productivity. Our portfolio is enriched by digitalization, artificial intelligence, and automation capabilities that enable remote operations, reduce risk, and drive decarbonization efforts.",
+  //       featured: [
+  //         {
+  //           title: "Optimize reservoir performance",
+  //           description:
+  //             "With the SureCONNECT FE downhole fiber-optic/electric wet-mate system you can optimize reservoir performance with real-time insights.",
+  //           image: Slider1,
+  //         },
+  //         {
+  //           title: "InvictaSet self-regenerating cement system",
+  //           description:
+  //             "Maintain long-term zonal isolation with a cement system that repairs itself.",
+  //           image: Slider1,
+  //         },
+  //       ],
+  //     },
+  //   },
+  //   {
+  //     id: "lng",
+  //     title: "Liquefied natural gas (LNG)",
+  //     content: {
+  //       heading: "Liquefied natural gas (LNG)",
+  //       description:
+  //         "Our LNG solutions provide advanced, cost-effective, and reliable liquefaction technology. We help optimize the production and distribution of liquefied natural gas with state-of-the-art digital monitoring systems and automation.",
+  //       featured: [
+  //         {
+  //           title: "Advanced LNG Liquefaction",
+  //           description:
+  //             "Enhancing efficiency in LNG production with next-generation liquefaction technology.",
+  //           image: Slider2,
+  //         },
+  //       ],
+  //     },
+  //   },
+  //   {
+  //     id: "industrial",
+  //     title: "Industrial technology",
+  //     content: {
+  //       heading: "Industrial technology",
+  //       description:
+  //         "Revolutionizing industrial technology with AI-driven automation and efficiency improvements.",
+  //       featured: [],
+  //     },
+  //   },
+  //   {
+  //     id: "energy",
+  //     title: "Energy transition",
+  //     content: {
+  //       heading: "Energy transition",
+  //       description:
+  //         "Pioneering solutions for a sustainable energy future through decarbonization and alternative energy sources.",
+  //       featured: [],
+  //     },
+  //   },
+  //   {
+  //     id: "solutions",
+  //     title: "Industrial solutions",
+  //     content: {
+  //       heading: "Industrial solutions",
+  //       description:
+  //         "Providing end-to-end industrial solutions for enhanced performance and sustainability.",
+  //       featured: [],
+  //     },
+  //   },
+  // ];
 
-  const [selectedTab, setSelectedTab] = useState(tabs[0]);
+  // const [selectedTab, setSelectedTab] = useState(tabs[0]);
 
   return (
     <section className="w-full bg-white py-16">
@@ -118,8 +118,7 @@ function WhatWeDo() {
         </div>
 
         {/* Main Content */}
-        <div className="flex flex-col md:flex-row bg-gray-100 rounded-lg overflow-hidden">
-          {/* Left Side - Tabs */}
+        {/* <div className="flex flex-col md:flex-row bg-gray-100 rounded-lg overflow-hidden">
           <div className="w-full md:w-1/3 border-r border-gray-300">
             {tabs.map((tab) => (
               <motion.button
@@ -137,7 +136,6 @@ function WhatWeDo() {
             ))}
           </div>
 
-          {/* Right Side - Content */}
           <motion.div
             key={selectedTab.id}
             initial={{ opacity: 0, x: 20 }}
@@ -152,7 +150,6 @@ function WhatWeDo() {
               {selectedTab.content.description}
             </p>
 
-            {/* Featured Section */}
             {selectedTab.content.featured.length > 0 && (
               <div>
                 <div className="border-t-2 border-teal-500 w-10 mb-4"></div>
@@ -205,7 +202,7 @@ function WhatWeDo() {
               </div>
             )}
           </motion.div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

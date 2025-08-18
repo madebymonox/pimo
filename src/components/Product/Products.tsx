@@ -1,7 +1,6 @@
 import { useLocation } from "react-router-dom";
 import Head from "../Elements/Nav/Head";
 import Header from "../Elements/Nav/Header";
-import Footer from "./../Elements/Nav/Footer";
 import ConstructionTabSelector from "./Construction";
 import InfrastructureTabSelector from "./Infrastructure";
 
@@ -28,7 +27,6 @@ function Products() {
       ) : (
         <div>No matching tab found.</div>
       )}
-      <Footer />
     </>
   );
 }

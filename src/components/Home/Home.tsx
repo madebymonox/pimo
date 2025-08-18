@@ -4,8 +4,7 @@ import HeroSection from "./Hero";
 import SubHero from "./SubHero";
 import WhoWeAre from "./WhoWeAre";
 import WhatWeDo from "./WhatWeDo";
-import Report from "./Report";
-import Footer from "./../Elements/Nav/Footer";
+// import Report from "./Report";
 import "./../../App.css";
 
 function Home() {
@@ -17,8 +16,7 @@ function Home() {
       <SubHero />
       <WhoWeAre />
       <WhatWeDo />
-      <Report />
-      <Footer />
+      {/* <Report /> */}
     </>
   );
 }

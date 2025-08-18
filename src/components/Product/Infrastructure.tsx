@@ -1,12 +1,11 @@
 import { useState } from "react";
-import trsImage from "./../../assets/images/PHOTO 3.jpg";
 
 const tabs = [
-  { key: "afm", label: "Asset and Facility Management (AFM)" },
-  { key: "him", label: "HVAC Installation and Maintenance (HIM)" },
-  { key: "pgm", label: "Power Generation & Maintenance (PGM)" },
-  { key: "epc", label: "Engineering. Procurement and Construction (EPC)" },
-  { key: "osm", label: "Offshore Support/ Maintenance" },
+  { key: "afm", label: "AFM" },
+  { key: "him", label: "HIM" },
+  { key: "pgm", label: "PGM" },
+  { key: "epc", label: "EPC" },
+  { key: "osm", label: "OSM" },
 ];
 
 function InfrastructureTabSelector() {
@@ -17,8 +16,8 @@ function InfrastructureTabSelector() {
     switch (active) {
       case "afm":
         return (
-          <div className="min-h-screen bg-white flex flex-col items-center justify-center px-6 py-12">
-            <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+          <div className="bg-white flex flex-col items-center justify-center px-6 py-12">
+            <div className="max-w-7xl w-full grid grid-cols-1 gap-12 items-start">
               {/* Left: Text */}
               <div>
                 <h1 className="text-3xl md:text-4xl text-blue-900 mb-6 font-soraRegular">
@@ -46,22 +45,13 @@ function InfrastructureTabSelector() {
                   switchgears,
                 </p>
               </div>
-
-              {/* Right: Image */}
-              <div className="flex justify-center">
-                <img
-                  src={trsImage}
-                  alt="Asset and Facility Management (AFM)"
-                  className="w-full max-w-md h-[500px] rounded shadow-lg object-cover"
-                />
-              </div>
             </div>
           </div>
         );
       case "him":
         return (
-          <div className="min-h-screen bg-white flex flex-col items-center justify-center px-6 py-12">
-            <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+          <div className="bg-white flex flex-col items-center justify-center px-6 py-12">
+            <div className="max-w-7xl w-full grid grid-cols-1 gap-12 items-start">
               {/* Left: Text */}
               <div>
                 <h1 className="text-3xl md:text-4xl text-blue-900 mb-6 font-soraRegular">
@@ -108,20 +98,20 @@ function InfrastructureTabSelector() {
               </div>
 
               {/* Right: Image */}
-              <div className="flex justify-center">
+              {/* <div className="flex justify-center">
                 <img
                   src={trsImage}
                   alt="HVAC Installation and Maintenance (HIM)"
                   className="w-full max-w-md h-[500px] rounded shadow-lg object-cover"
                 />
-              </div>
+              </div> */}
             </div>
           </div>
         );
       case "pgm":
         return (
-          <div className="min-h-screen bg-white flex flex-col items-center justify-center px-6 py-12">
-            <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+          <div className="bg-white flex flex-col items-center justify-center px-6 py-12">
+            <div className="max-w-7xl w-full grid grid-cols-1 gap-12 items-start">
               {/* Left: Text */}
               <div>
                 <h1 className="text-3xl md:text-4xl text-blue-900 mb-6 font-soraRegular">
@@ -146,20 +136,20 @@ function InfrastructureTabSelector() {
               </div>
 
               {/* Right: Image */}
-              <div className="flex justify-center">
+              {/* <div className="flex justify-center">
                 <img
                   src={trsImage}
                   alt="Power Generation & Maintenance (PGM)"
                   className="w-full max-w-md h-[500px] rounded shadow-lg object-cover"
                 />
-              </div>
+              </div> */}
             </div>
           </div>
         );
       case "epc":
         return (
-          <div className="min-h-screen bg-white flex flex-col items-center justify-center px-6 py-12">
-            <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+          <div className="bg-white flex flex-col items-center justify-center px-6 py-12">
+            <div className="max-w-7xl w-full grid grid-cols-1 gap-12 items-start">
               {/* Left: Text */}
               <div>
                 <h1 className="text-3xl md:text-4xl text-blue-900 mb-6 font-soraRegular">
@@ -190,24 +180,24 @@ function InfrastructureTabSelector() {
               </div>
 
               {/* Right: Image */}
-              <div className="flex justify-center">
+              {/* <div className="flex justify-center">
                 <img
                   src={trsImage}
                   alt="Engineering. Procurement and Construction (EPC)"
                   className="w-full max-w-md h-[500px] rounded shadow-lg object-cover"
                 />
-              </div>
+              </div> */}
             </div>
           </div>
         );
       case "osm":
         return (
-          <div className="min-h-screen bg-white flex flex-col items-center justify-center px-6 py-12">
-            <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+          <div className="bg-white flex flex-col items-center justify-center px-6 py-12">
+            <div className="max-w-7xl w-full grid grid-cols-1 gap-12 items-start">
               {/* Left: Text */}
               <div>
                 <h1 className="text-3xl md:text-4xl text-blue-900 mb-6 font-soraRegular">
-                  Offshore Support/ Maintenance
+                  Offshore Support / Maintenance (OSM)
                 </h1>
 
                 <h2 className="text-lg font-axiformaBook text-blue-900 mb-3">
@@ -243,13 +233,13 @@ function InfrastructureTabSelector() {
               </div>
 
               {/* Right: Image */}
-              <div className="flex justify-center">
+              {/* <div className="flex justify-center">
                 <img
                   src={trsImage}
                   alt="Offshore Support/ Maintenance"
                   className="w-full max-w-md h-[500px] rounded shadow-lg object-cover"
                 />
-              </div>
+              </div> */}
             </div>
           </div>
         );
@@ -262,16 +252,16 @@ function InfrastructureTabSelector() {
     <div className="w-full p-4">
       {/* Scrollable tab bar */}
       <div className="overflow-x-auto">
-        <div className="inline-flex items-center bg-gray-100 rounded-full p-1 w-max min-w-full">
+        <div className="inline-flex items-center justify-center bg-gray-100 rounded-full p-1 w-max min-w-full">
           {tabs.map((tab, idx) => (
             <div key={tab.key} className="flex items-center">
               <button
                 onClick={() => setActive(tab.key)}
-                className={`px-5 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors duration-200
+                className={`px-5 py-2 rounded-full text-sm font-medium whitespace-nowrap hover:bg-white hover:text-black transition-colors duration-200
                 focus:outline-none
                 ${
                   active === tab.key
-                    ? "bg-black text-white"
+                    ? "bg-blue-900 text-white"
                     : "text-black hover:text-gray-600"
                 }`}
               >

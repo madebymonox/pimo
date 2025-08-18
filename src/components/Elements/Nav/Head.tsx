@@ -28,7 +28,9 @@ function Head() {
 
           {/* Hidden on mobile, shown on medium (md) and larger screens */}
           <li className="hidden md:flex hover:text-teal-500 cursor-pointer gap-2">
-            Careers {UpArrow}
+            <Link target="_blank" to={"/careers"}>
+              Careers {UpArrow}
+            </Link>
           </li>
           <li className="hidden md:block hover:text-teal-500 cursor-pointer">
             <Link

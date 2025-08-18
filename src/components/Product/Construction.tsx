@@ -8,12 +8,12 @@ import cwdImage from "./../../assets/images/CASEBIT.jpg";
 import cwdImageSub from "./../../assets/images/PHOTO 0.jpg";
 
 const tabs = [
-  { key: "trs", label: "Tubular Running Service (TRS)" },
-  { key: "pds", label: "Pile Driving Service (PDS)" },
-  { key: "oms", label: "Onsite Machining Service (OMS)" },
-  { key: "cas", label: "Casing/Cementing Accessories Supply (CAS)" },
-  { key: "tis", label: "Tubular Inspection Services (TIS)" },
-  { key: "cwd", label: "Casing While Drilling (CWD)" },
+  { key: "trs", label: "TRS" },
+  { key: "pds", label: "PDS" },
+  { key: "oms", label: "OMS" },
+  { key: "cas", label: "CAS" },
+  { key: "tis", label: "TIS" },
+  { key: "cwd", label: "CWD" },
 ];
 
 function Construction() {
@@ -316,16 +316,16 @@ function Construction() {
     <div className="w-full p-4">
       {/* Scrollable tab bar */}
       <div className="overflow-x-auto">
-        <div className="inline-flex items-center bg-gray-100 rounded-full p-1 w-max min-w-full">
+        <div className="inline-flex items-center justify-center bg-gray-100 rounded-full p-1 w-max min-w-full">
           {tabs.map((tab, idx) => (
             <div key={tab.key} className="flex items-center">
               <button
                 onClick={() => setActive(tab.key)}
-                className={`px-5 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors duration-200
+                className={`px-5 py-2 rounded-full text-sm font-medium whitespace-nowrap hover:bg-white hover:text-black transition-colors duration-200
                 focus:outline-none
                 ${
                   active === tab.key
-                    ? "bg-black text-white"
+                    ? "bg-blue-900 text-white"
                     : "text-black hover:text-gray-600"
                 }`}
               >
