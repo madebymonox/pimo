@@ -1,6 +1,6 @@
 const JobBanner = () => {
   return (
-    <div className="relative w-full h-64 bg-gray-200 flex items-center justify-center">
+    <div className="relative w-full h-64 bg-gray-200 flex items-center justify-center px-4 md:px-40">
       <div
         className="absolute inset-0 bg-cover bg-center opacity-50"
         style={{ backgroundImage: "url(https://via.placeholder.com/1200x300)" }}

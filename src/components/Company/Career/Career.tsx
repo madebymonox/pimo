@@ -3,7 +3,7 @@ import "./../../../App.css";
 function Career() {
   return (
     <>
-      <section className="w-full bg-white py-16">
+      <section className="w-full bg-white py-16 px-4 md:px-40">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start px-6">
           {/* Left Section - Text */}
           <div className="md:w-4/5">
