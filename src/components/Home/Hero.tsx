@@ -11,6 +11,7 @@ const HeroSection = () => {
   const slides = [
     {
       image: Slider1,
+      control: 'object-bottom',
       title: "Powering the Future of Energy",
       cta: "WATCH NOW",
       cta_url: "",
@@ -19,6 +20,7 @@ const HeroSection = () => {
     },
     {
       image: Slider2,
+      control: 'object-center',
       title: "Innovation. Reliability. Performance.",
       cta: "LEARN MORE",
       cta_url: "",
@@ -27,6 +29,7 @@ const HeroSection = () => {
     },
     {
       image: Slider3,
+      control: 'object-top',
       title: "Engineering Energy for a Sustainable Tomorrow",
       cta: "EXPLORE",
       cta_url: "",
@@ -35,6 +38,7 @@ const HeroSection = () => {
     },
     {
       image: Slider4,
+      control: 'object-top',
       title: "Driving Progress Through Oil & Gas Innovation",
       cta: "LEARN MORE",
       cta_url: "",
@@ -43,6 +47,7 @@ const HeroSection = () => {
     },
     {
       image: Slider5,
+      control: 'object-top',
       title: "Trusted Partner in Energy Infrastructure",
       cta: "DISCOVER",
       cta_url: "",
@@ -88,7 +93,7 @@ const HeroSection = () => {
           <img
             src={slide.image}
             alt={`Slide ${index + 1}`}
-            className="w-full h-full object-cover"
+            className={`w-full h-full object-cover ${slide.control}`}
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30">
             <div className="absolute inset-0 flex flex-col justify-center items-start text-white px-4 lg:px-8 xl:px-16">
