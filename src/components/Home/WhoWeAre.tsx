@@ -35,10 +35,6 @@ function WhoWeAre() {
               alt="Energy Technology Workers"
               className="w-full h-full object-cover rounded-lg"
             />
-            {/* Play Button (Optional for Video) */}
-            <button className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-2xl rounded-full w-12 h-12 mx-auto my-auto">
-              ▶
-            </button>
           </div>
         </div>
       </div>

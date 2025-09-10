@@ -1,5 +1,4 @@
 import "./../../../App.css";
-import { Link } from "react-router";
 
 function Career() {
   return (
@@ -44,18 +43,8 @@ function Career() {
               </h3>
               <ul className="space-y-3 list-inside list-disc text-gray-700 text-base leading-relaxed font-axiformaBook text-justify">
                 <li>
-                  Job vacancies are advertised through our official social media
-                  channels, including LinkedIn.
-                </li>
-                <li>
-                  Interested candidates are invited to submit their CVs to our
-                  recruitment email:{" "}
-                  <Link
-                    to={"mailto:jobopening@pimomafuta.com"}
-                    className="text-teal-500 font-semibold"
-                  >
-                    jobopening@pimomafuta.com
-                  </Link>
+                  Job vacancies are advertised through our official LinkedIn
+                  channels.
                 </li>
                 <li>
                   Applications are reviewed, and shortlisted candidates are
@@ -72,7 +61,7 @@ function Career() {
                 </li>
                 <li>
                   We encourage passionate, skilled, and driven individuals to
-                  apply and take the next step in their career journey with us.
+                  apply and take the next step in their career.
                 </li>
               </ul>
             </div>

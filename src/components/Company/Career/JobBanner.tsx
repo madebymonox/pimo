@@ -7,19 +7,9 @@ const JobBanner = () => {
       ></div>
       <div className="relative z-10 text-center">
         <h1 className="text-4xl leading-tight font-soraExtraBold text-green-500">
-          Your Future in Oil and Gas Starts here <br />
-          Join Pimo-Mafuta and Shape the Energy of Tomorrow
+          Your Future in the Energy Sector Starts here <br />
+          Join Pimo-Mafuta and help shape the Energy of Tomorrow
         </h1>
-        <div className="mt-8 flex items-center justify-center">
-          <input
-            type="text"
-            placeholder="Search for Job title or location"
-            className="py-3 px-4 rounded-full border-none focus:outline-none w-96 font-axiformaBook"
-          />
-          <button className="bg-teal-500 text-white py-3 rounded-full ml-2 w-24 text-sm font-axiformaBook">
-            Find Jobs
-          </button>
-        </div>
       </div>
     </div>
   );

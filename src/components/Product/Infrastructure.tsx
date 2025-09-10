@@ -71,27 +71,26 @@ function InfrastructureTabSelector() {
 
                 <p className="text-gray-800 leading-relaxed font-axiformaBook">
                   These services include:
-                  <ul>
+                  <ul className="list-disc list-inside space-y-2 text-gray-800">
                     <li>
-                      ✅ Replacement of failed gate valves on chilled
-                      waterlines.
+                      Replacement of failed gate valves on chilled waterlines.
                     </li>
                     <li>
-                      ✅ Carryout duct fabrication, installation, modification
-                      and maintenance.
+                      Carryout duct fabrication, installation, modification and
+                      maintenance.
                     </li>
                     <li>
-                      ✅ Provide engineering services such as heat load
+                      Provide engineering services such as heat load
                       calculation, system selection, design/review of HVAC
                       system drawings with necessary approvals.
                     </li>
                     <li>
-                      ✅ De-scaling of chilled water line/chemical cleaning of
+                      De-scaling of chilled water line/chemical cleaning of
                       evaporator coils.
                     </li>
                     <li>
-                      ✅ General/Complete maintenance on both
-                      Industrial/Domestic HVAC System.
+                      General/Complete maintenance on both Industrial/Domestic
+                      HVAC System.
                     </li>
                   </ul>
                 </p>
@@ -217,17 +216,17 @@ function InfrastructureTabSelector() {
 
                 <p className="text-gray-800 leading-relaxed font-axiformaBook">
                   Our services includes:
-                  <ul>
-                    <li>✅ Onshore/Offshore fabrication</li>
-                    <li>✅ NDT Services</li>
+                  <ul className="list-disc list-inside space-y-2 text-gray-800">
+                    <li>Onshore/Offshore fabrication</li>
+                    <li>NDT Services</li>
                     <li>
-                      ✅ Calibration & recertification of instruments test
+                      Calibration & recertification of instruments test
                       equipment
                     </li>
                     <li>
-                      ✅ Provision for temporary refuge testing & maintenance
+                      Provision for temporary refuge testing & maintenance
                     </li>
-                    <li>✅ Tank and vessel cleaning</li>
+                    <li>Tank and vessel cleaning</li>
                   </ul>
                 </p>
               </div>

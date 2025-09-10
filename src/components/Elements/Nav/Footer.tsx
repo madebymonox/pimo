@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-start space-y-8 md:space-y-0">
         {/* Logo Section */}
         <div className="flex flex-col items-center md:items-start mb-8 md:mb-0">
-          <img src={Logo} alt="Pimo Mafuta" className="w-40 md:w-60" />
+          <img src={Logo} alt="Pimo Mafuta" className="w-40 md:w-50" />
         </div>
 
         {/* Links Section */}
@@ -41,42 +41,12 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div>
-            <h4 className="text-white font-semibold mb-3 md:mb-2">
-              Helpful Links
-            </h4>
-            <ul className="space-y-2 md:space-y-3">
-              <li>
-                <Link to={""} className="hover:text-white block py-1 md:py-0">
-                  Newsroom
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to={"/about/leadership"}
-                  className="hover:text-white block py-1 md:py-0"
-                >
-                  Company Leadership
-                </Link>
-              </li>
-              <li>
-                <Link to={""} className="hover:text-white block py-1 md:py-0">
-                  Energy Forward Stories
-                </Link>
-              </li>
-              <li>
-                <Link to={""} className="hover:text-white block py-1 md:py-0">
-                  Digital Transformation
-                </Link>
-              </li>
-            </ul>
-          </div>
         </div>
 
         {/* Social Icons */}
         <div className="flex flex-wrap justify-center gap-4 md:gap-6 md:flex-nowrap">
           <Link
-            to={""}
+            to={"https://www.linkedin.com/company/pimo-mafuta-energies"}
             className="p-2 rounded-full border border-gray-500 hover:border-white transition-colors"
           >
             <FaLinkedin className="text-gray-400 hover:text-white text-lg" />
@@ -88,30 +58,10 @@ const Footer = () => {
       <div className="border-t border-gray-700 my-6 md:my-8"></div>
 
       {/* Bottom Links */}
-      <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-xs md:text-sm">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-4 text-xs md:text-sm">
         <span className="order-2 md:order-1">
           © 2025 Pimo-Mafuta Energies Limited
         </span>
-        <div className="order-1 md:order-2 flex flex-wrap justify-center gap-3 md:gap-4">
-          <Link to={""} className="hover:text-white whitespace-nowrap">
-            Cookies
-          </Link>
-          <Link to={""} className="hover:text-white whitespace-nowrap">
-            Terms
-          </Link>
-          <Link to={""} className="hover:text-white whitespace-nowrap">
-            Conflict Minerals
-          </Link>
-          <Link to={""} className="hover:text-white whitespace-nowrap">
-            E-Waste
-          </Link>
-          <Link to={""} className="hover:text-white whitespace-nowrap">
-            Privacy Notice
-          </Link>
-          <Link to={""} className="hover:text-white whitespace-nowrap">
-            Preferences
-          </Link>
-        </div>
       </div>
     </footer>
   );

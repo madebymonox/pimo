@@ -5,7 +5,6 @@ import omsImage from "./../../assets/images/PHOTO 5.jpg";
 import casImage from "./../../assets/images/PHOTO 7.jpg";
 import tisImage from "./../../assets/images/PHOTO 8.jpg";
 import cwdImage from "./../../assets/images/CASEBIT.jpg";
-import cwdImageSub from "./../../assets/images/PHOTO 0.jpg";
 
 const tabs = [
   { key: "trs", label: "TRS" },
@@ -134,19 +133,18 @@ function Construction() {
 
                 <p className="text-gray-800 leading-relaxed font-axiformaBook">
                   Our on-site machines are able to perform:
-                  <ul>
+                  <ul className="list-disc list-inside space-y-2 text-gray-800">
                     <li>
-                      ✅ Orbital Cold Cutting & Bevelling (internal and
-                      external)
+                      Orbital Cold Cutting & Bevelling (internal and external)
                     </li>
                     <li>
-                      ✅ Squaring, Counterboring, Weld Removal and preparation
+                      Squaring, Counterboring, Weld Removal and preparation
                     </li>
-                    <li>✅ Surfacing & Boring</li>
-                    <li>✅ Facing & Resurfacing</li>
-                    <li>✅ Tapping</li>
-                    <li>✅ RTJ Grooves</li>
-                    <li>✅ Conical Machining</li>
+                    <li>Surfacing & Boring</li>
+                    <li>Facing & Resurfacing</li>
+                    <li>Tapping</li>
+                    <li>RTJ Grooves</li>
+                    <li>Conical Machining</li>
                   </ul>
                 </p>
               </div>
@@ -191,20 +189,20 @@ function Construction() {
 
                 <p className="text-gray-800 leading-relaxed font-axiformaBook">
                   We stock:
-                  <ul>
-                    <li>✅ Float Shoes, Guide Shoes and Float Collars</li>
-                    <li>✅ Reamer Shoes</li>
-                    <li>✅ Top and Bottom Plugs</li>
+                  <ul className="list-disc list-inside space-y-2 text-gray-800">
+                    <li>Float Shoes, Guide Shoes and Float Collars</li>
+                    <li>Reamer Shoes</li>
+                    <li>Top and Bottom Plugs</li>
                     <li>
-                      ✅ Centralizers and Stop Collars (all types including
-                      custom designs)
+                      Centralizers and Stop Collars (all types including custom
+                      designs)
                     </li>
                     <li>
-                      ✅ Solid Body Centralizers including market leader:
+                      Solid Body Centralizers including market leader:
                       Spirolizer
                     </li>
-                    <li>✅ Rigid Centralizers</li>
-                    <li>✅ Cement Baskets</li>
+                    <li>Rigid Centralizers</li>
+                    <li>Cement Baskets</li>
                   </ul>
                 </p>
               </div>
@@ -244,16 +242,16 @@ function Construction() {
 
                 <p className="text-gray-800 leading-relaxed font-axiformaBook">
                   Services include:
-                  <ul>
-                    <li>✅ Visual Inspection</li>
-                    <li>✅ Thread Inspection</li>
+                  <ul className="list-disc list-inside space-y-2 text-gray-800">
+                    <li>Visual Inspection</li>
+                    <li>Thread Inspection</li>
                     <li>
-                      ✅ Non-Destructive Testing including:{" "}
-                      <ul>
-                        <li>- Ultrasonic Testing (UT)</li>
-                        <li>- Electromagnetic Testing (EMI)</li>
-                        <li>- Magnetic Particle Inspection (MPI)</li>
-                        <li>- Liquid Penetrant Inspection (LPI)</li>
+                      Non-Destructive Testing including:{" "}
+                      <ul className="list-disc list-inside space-y-2 text-gray-800 ml-5 my-3">
+                        <li>Ultrasonic Testing (UT)</li>
+                        <li>Electromagnetic Testing (EMI)</li>
+                        <li>Magnetic Particle Inspection (MPI)</li>
+                        <li>Liquid Penetrant Inspection (LPI)</li>
                       </ul>
                     </li>
                   </ul>
@@ -292,8 +290,6 @@ function Construction() {
                   we are well positioned to deliver CwD services. CwD compresses
                   drilling, casing, cementing into a single run/trip.
                 </p>
-
-                <img src={cwdImageSub} alt="" />
               </div>
 
               {/* Right: Image */}
