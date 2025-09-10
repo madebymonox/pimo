@@ -4,11 +4,14 @@ import { FaLinkedin } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-gray-400 py-12 md:py-20 px-4 md:px-6">
+    <footer className="bg-black text-gray-400 py-12 md:py-20 px-4 md:px-40">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-start space-y-8 md:space-y-0">
         {/* Logo Section */}
         <div className="flex flex-col items-center md:items-start mb-8 md:mb-0">
           <img src={Logo} alt="Pimo Mafuta" className="w-40 md:w-50" />
+          <span className="order-2 md:order-1 text-sm mt-10">
+            © 2025 Pimo-Mafuta Energies Limited
+          </span>
         </div>
 
         {/* Links Section */}
@@ -52,16 +55,6 @@ const Footer = () => {
             <FaLinkedin className="text-gray-400 hover:text-white text-lg" />
           </Link>
         </div>
-      </div>
-
-      {/* Divider */}
-      <div className="border-t border-gray-700 my-6 md:my-8"></div>
-
-      {/* Bottom Links */}
-      <div className="flex flex-col md:flex-row justify-center items-center gap-4 text-xs md:text-sm">
-        <span className="order-2 md:order-1">
-          © 2025 Pimo-Mafuta Energies Limited
-        </span>
       </div>
     </footer>
   );
