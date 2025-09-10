@@ -77,7 +77,7 @@ const HeroSection = () => {
   }, [activeIndex]);
 
   return (
-    <div className="relative w-full h-[56vh]">
+    <div className="relative w-full h-[60vh]">
       {slides.map((slide, index) => (
         <div
           key={index}
