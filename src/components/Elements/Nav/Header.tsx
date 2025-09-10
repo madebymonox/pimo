@@ -57,7 +57,7 @@ function Header() {
         },
         {
           name: "Leadership Team",
-          link: "#",
+          link: "/about/leadership",
           description: "The Core of Pimo",
         },
       ],
