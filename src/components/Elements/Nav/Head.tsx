@@ -24,11 +24,19 @@ function Head() {
       <section className="flex w-full h-10 bg-gray-800 items-center p-2 font-soraRegular px-4 md:px-40">
         <ul className="flex flex-auto gap-4 text-white text-xs justify-end">
           {/* Shown on all devices */}
-          <li className="hover:text-teal-500 cursor-pointer">Contact Us</li>
+          <li className="hover:text-teal-500 cursor-pointer">
+            <Link target="_blank" to={"mailto:contact@pimomafuta.com"}>
+              Contact Us
+            </Link>
+          </li>
 
           {/* Hidden on mobile, shown on medium (md) and larger screens */}
           <li className="hidden md:flex hover:text-teal-500 cursor-pointer gap-2">
-            <Link target="_blank" to={"/careers"} className="flex flex-auto gap-2">
+            <Link
+              target="_blank"
+              to={"/careers"}
+              className="flex flex-auto gap-2"
+            >
               Careers {UpArrow}
             </Link>
           </li>
