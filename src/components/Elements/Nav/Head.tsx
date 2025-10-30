@@ -25,9 +25,7 @@ function Head() {
         <ul className="flex flex-auto gap-4 text-white text-xs justify-end">
           {/* Shown on all devices */}
           <li className="hover:text-teal-500 cursor-pointer">
-            <Link target="_blank" to={"mailto:contact@pimomafuta.com"}>
-              Contact Us
-            </Link>
+            <Link to={"/contact"}>Contact Us</Link>
           </li>
 
           {/* Hidden on mobile, shown on medium (md) and larger screens */}

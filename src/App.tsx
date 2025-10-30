@@ -5,6 +5,7 @@ import Leadership from "./components/Company/About/Leadership/Leadership";
 import Careers from "./components/Company/Careers";
 import Products from "./components/Product/Products";
 import Solutions from "./components/Product/Solutions";
+import Contact from "./components/Company/Contact";
 import NotFound from "./components/NotFound";
 import Footer from "./components/Elements/Nav/Footer";
 import "./App.css";
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/careers" element={<Careers />} />
         <Route path="/product" element={<Products />} />
         <Route path="/solution" element={<Solutions />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
 
