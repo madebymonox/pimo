@@ -1,4 +1,3 @@
-import Avater from "./../../../assets/images/avater.jpeg";
 import "./../../../App.css";
 
 function Leadership() {
@@ -9,65 +8,33 @@ function Leadership() {
           <div className="md:w-full px-6 text-left">
             <div className="border-t-2 border-teal-500 w-10 mb-4"></div>
             <h2 className="text-5xl text-gray-900 mb-4 font-soraBold">
-              Company leadership
+              Leadership Team
             </h2>
-            <p className="text-gray-500 font-axiformaBook md:w-1/2">
-              We foster a culture of open dialogue, collaboration, and rigorous
-              decision-making to create long-term value for our stakeholders.
+            <p className="text-gray-500 mb-4 font-axiformaBook md:w-2/3">
+              At Pimo-Mafuta Energies, our success is driven by a highly
+              experienced leadership team with deep expertise across the oil and
+              gas, energy infrastructure, engineering, operations, asset
+              integrity, and business management sectors.
             </p>
-          </div>
-          <div className="md:w-full px-6 py-10">
-            <ul className="flex gap-10 font-axiformaBook font-sm cursor-pointer">
-              <li className="text-teal-500">Management Team</li>
-              <li>Board of Directors</li>
-            </ul>
-            <aside className="grid grid-cols-5 py-8 gap-10">
-              <span className="text-center space-y-2">
-                <img
-                  className="border border-gray-300 rounded-full"
-                  src={Avater}
-                  alt="Directory 1"
-                />
-                <hgroup>
-                  <h4 className="font-soraRegular text-teal-500">
-                    Pius Uwhubetiyi
-                  </h4>
-                  <h6 className="font-axiformaBook text-gray-500 text-xs">
-                    Group Chairman
-                  </h6>
-                </hgroup>
-              </span>
-              <span className="text-center space-y-2">
-                <img
-                  className="border border-gray-300 rounded-full"
-                  src={Avater}
-                  alt="Directory 1"
-                />
-                <hgroup>
-                  <h4 className="font-soraRegular text-teal-500">
-                    Samantha Bailey
-                  </h4>
-                  <h6 className="font-axiformaBook text-gray-500 text-xs">
-                    Director
-                  </h6>
-                </hgroup>
-              </span>
-              <span className="text-center space-y-2">
-                <img
-                  className="border border-gray-300 rounded-full"
-                  src={Avater}
-                  alt="Directory 1"
-                />
-                <hgroup>
-                  <h4 className="font-soraRegular text-teal-500">
-                    Victor Momoh
-                  </h4>
-                  <h6 className="font-axiformaBook text-gray-500 text-xs">
-                    General Manager Operations
-                  </h6>
-                </hgroup>
-              </span>
-            </aside>
+            <p className="text-gray-500 mb-4 font-axiformaBook md:w-2/3">
+              United by a commitment to excellence, innovation, safety, and
+              sustainability, our leaders provide the strategic direction that
+              enables us to deliver world-class solutions to clients across the
+              energy value chain.
+            </p>
+            <p className="text-gray-500 mb-4 font-axiformaBook md:w-2/3">
+              Through strong governance, technical expertise, and a culture of
+              continuous improvement, the leadership team fosters operational
+              excellence, develops future industry talent, and ensures that
+              every project is executed with professionalism, integrity, and a
+              relentless focus on value creation.
+            </p>
+            <p className="text-gray-500 mb-4 font-axiformaBook md:w-2/3">
+              As the energy industry evolves, our leadership remains dedicated
+              to advancing technologies, strengthening partnerships, and
+              delivering safe, efficient, and sustainable solutions that power
+              progress and support economic growth.
+            </p>
           </div>
         </div>
       </section>

@@ -11,7 +11,7 @@ const HeroSection = () => {
   const slides = [
     {
       image: Slider1,
-      control: 'object-bottom',
+      control: "object-center",
       title: "Powering the Future of Energy",
       cta: "WATCH NOW",
       cta_url: "",
@@ -20,7 +20,7 @@ const HeroSection = () => {
     },
     {
       image: Slider2,
-      control: 'object-center',
+      control: "object-center",
       title: "Innovation. Reliability. Performance.",
       cta: "LEARN MORE",
       cta_url: "",
@@ -29,7 +29,7 @@ const HeroSection = () => {
     },
     {
       image: Slider3,
-      control: 'object-top',
+      control: "object-center",
       title: "Engineering Energy for a Sustainable Tomorrow",
       cta: "EXPLORE",
       cta_url: "",
@@ -38,7 +38,7 @@ const HeroSection = () => {
     },
     {
       image: Slider4,
-      control: 'object-top',
+      control: "object-center",
       title: "Driving Progress Through Oil & Gas Innovation",
       cta: "LEARN MORE",
       cta_url: "",
@@ -47,7 +47,7 @@ const HeroSection = () => {
     },
     {
       image: Slider5,
-      control: 'object-top',
+      control: "object-center",
       title: "Trusted Partner in Energy Infrastructure",
       cta: "DISCOVER",
       cta_url: "",
@@ -68,7 +68,7 @@ const HeroSection = () => {
     };
 
     setProgress(0);
-    progressInterval = setInterval(updateProgress, 50); // 50ms * 100 = 5000ms
+    progressInterval = setInterval(updateProgress, 50);
 
     slideTimeout = setTimeout(() => {
       setActiveIndex((prev) => (prev + 1) % slides.length);
@@ -79,10 +79,10 @@ const HeroSection = () => {
       clearInterval(progressInterval);
       clearTimeout(slideTimeout);
     };
-  }, [activeIndex]);
+  }, [activeIndex, slides.length]);
 
   return (
-    <div className="relative w-full h-[60vh]">
+    <div className="relative w-full h-[70vh] lg:h-[75vh]">
       {slides.map((slide, index) => (
         <div
           key={index}
@@ -95,27 +95,41 @@ const HeroSection = () => {
             alt={`Slide ${index + 1}`}
             className={`w-full h-full object-cover ${slide.control}`}
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30">
-            <div className="absolute inset-0 flex flex-col justify-center items-start text-white px-4 lg:px-8 xl:px-16">
-              <div className="max-w-4xl space-y-4 m-auto text-center group">
-                <h1 className="text-4xl md:text-5xl lg:text-5xl leading-tight font-soraExtraBold">
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30">
+            <div className="absolute inset-0 flex flex-col justify-center items-center text-white px-4 sm:px-8 lg:px-16 xl:px-24">
+              <div className="max-w-4xl space-y-3 sm:space-y-4 m-auto text-center">
+                <motion.h1
+                  initial={{ y: 30, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ duration: 0.6, delay: 0.2 }}
+                  className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl leading-tight font-soraExtraBold"
+                >
                   {slide.title}
-                </h1>
-                <p className="text-lg md:text-base max-w-2xl leading-relaxed font-axiformaBook">
+                </motion.h1>
+                <motion.p
+                  initial={{ y: 30, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ duration: 0.6, delay: 0.4 }}
+                  className="text-sm sm:text-base md:text-lg text-center max-w-2xl mx-auto leading-relaxed font-axiformaBook text-gray-200"
+                >
                   {slide.description}
-                </p>
-                {/* CTA Button Fix */}
-                <div className="inline-block">
+                </motion.p>
+                <motion.div
+                  initial={{ y: 30, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ duration: 0.6, delay: 0.6 }}
+                  className="inline-block"
+                >
                   <Link
                     to={{ pathname: slide.cta_url }}
-                    className="text-xs font-axiformaBook flex items-center px-4 py-2 text-white hover:text-teal-400 transition-all"
+                    className="text-xs sm:text-sm font-axiformaBook flex items-center px-5 sm:px-6 py-2.5 sm:py-3 text-white hover:text-teal-400 transition-all border border-white/30 hover:border-teal-400 rounded-full bg-white/10 backdrop-blur-sm hover:bg-white/20"
                   >
                     {slide.cta}
                     <motion.div
                       initial={{ x: 0 }}
-                      whileHover={{ x: 5 }} // Moves right on hover
-                      transition={{ type: "tween", duration: 0.2 }} // Smooth transition
-                      className="ml-1"
+                      whileHover={{ x: 8 }}
+                      transition={{ type: "tween", duration: 0.2 }}
+                      className="ml-2"
                     >
                       <svg
                         width="15"
@@ -130,7 +144,7 @@ const HeroSection = () => {
                       </svg>
                     </motion.div>
                   </Link>
-                </div>
+                </motion.div>
               </div>
             </div>
           </div>
@@ -138,25 +152,31 @@ const HeroSection = () => {
       ))}
 
       {/* Progress Bar */}
-      <div className="absolute bottom-4 left-0 right-0 px-4">
-        <div className="max-w-4xl mx-auto flex gap-4 h-1">
+      <div className="absolute bottom-5 left-0 right-0 px-4 sm:px-8">
+        <div className="max-w-4xl mx-auto flex gap-2.5 sm:gap-3 h-1">
           {slides.map((_, index) => (
             <div key={index} className="h-full relative flex-grow">
-              <div className="absolute inset-0 bg-gray-400" />
+              <div className="absolute inset-0 bg-white/30" />
               <div
-                className="absolute inset-0 bg-teal-400 rounded-full transition-all"
+                className="absolute inset-0 bg-teal-400 rounded-full transition-all duration-300"
                 style={{
                   width:
                     index === activeIndex
                       ? `${progress}%`
                       : index < activeIndex
-                      ? "100%"
-                      : "0%",
+                        ? "100%"
+                        : "0%",
                 }}
               />
             </div>
           ))}
         </div>
+      </div>
+
+      {/* Slide Counter */}
+      <div className="absolute bottom-5 right-4 sm:right-8 text-white/80 text-xs sm:text-sm font-axiformaBook">
+        {String(activeIndex + 1).padStart(2, "0")} /{" "}
+        {String(slides.length).padStart(2, "0")}
       </div>
     </div>
   );

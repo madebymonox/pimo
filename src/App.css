@@ -27,7 +27,13 @@
 }
 
 .bgImage {
-  background-image: url("./assets/images/bg-about.jpg");
+  background-image: url("./assets/images/about-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.leadershipbgImage {
+  background-image: url("./assets/images/img1.png");
   background-size: cover;
   background-position: center;
 }

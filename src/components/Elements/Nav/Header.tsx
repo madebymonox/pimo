@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Link } from "react-router";
 // import { Link } from "react-router-dom";
 import Logo from "./../../../assets/images/logo.png";
@@ -8,8 +8,10 @@ function Header() {
   const [openDropdown, setOpenDropdown] = useState<number | null>(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openMobileDropdown, setOpenMobileDropdown] = useState<number | null>(
-    null
+    null,
   );
+  const dropdownRef = useRef<HTMLUListElement>(null);
+  const mobileMenuRef = useRef<HTMLDivElement>(null);
 
   const toggleDropdown = (index: number) => {
     setOpenDropdown(openDropdown === index ? null : index);
@@ -23,6 +25,54 @@ function Header() {
   const toggleMobileDropdown = (index: number) => {
     setOpenMobileDropdown(openMobileDropdown === index ? null : index);
   };
+
+  const closeAllMenus = () => {
+    setOpenDropdown(null);
+    setIsMenuOpen(false);
+    setOpenMobileDropdown(null);
+  };
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      // Close desktop dropdown
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target as Node)
+      ) {
+        setOpenDropdown(null);
+      }
+
+      // Close mobile menu
+      if (
+        mobileMenuRef.current &&
+        !mobileMenuRef.current.contains(event.target as Node)
+      ) {
+        setIsMenuOpen(false);
+        setOpenMobileDropdown(null);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  // Close mobile menu when window resizes to desktop
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        setIsMenuOpen(false);
+        setOpenMobileDropdown(null);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const DropdownArrow = (
     <svg
@@ -48,17 +98,23 @@ function Header() {
         {
           name: "About Us",
           link: "/about",
-          description: "Who we are",
+          description: "Learn about Pimo",
         },
         {
-          name: "Our Journey",
-          link: "/about",
-          description: "Advancing to net-zero",
+          name: "Our Customers/Clients",
+          link: "/clients",
+          description: "Who we work with",
+        },
+        {
+          name: "QHSE",
+          link: "/qhse",
+          description:
+            "Our commitment to quality, health, safety & environment",
         },
         {
           name: "Leadership Team",
           link: "/about/leadership",
-          description: "The Core of Pimo",
+          description: "Meet the people behind Pimo",
         },
       ],
     },
@@ -96,9 +152,24 @@ function Header() {
       title: "Solutions",
       content: [
         {
-          name: "Technical Tools",
+          name: "ILT",
           link: "#",
-          description: "Reliable oilfield gear",
+          description: "",
+        },
+        {
+          name: "CRTi",
+          link: "#",
+          description: "",
+        },
+        {
+          name: "S-200 Hydraulic Hammer",
+          link: "#",
+          description: "",
+        },
+        {
+          name: "Reamer Shoes",
+          link: "#",
+          description: "",
         },
       ],
     },
@@ -109,13 +180,13 @@ function Header() {
       <div className="w-full flex justify-between items-center">
         {/* Logo */}
         <div className="text-2xl font-bold text-gray-800">
-          <Link to="/">
+          <Link to="/" onClick={closeAllMenus}>
             <img src={Logo} alt="Pimo Logo" className="h-14" />
           </Link>
         </div>
 
         {/* Desktop Navigation */}
-        <ul className="hidden md:flex gap-6 z-auto">
+        <ul ref={dropdownRef} className="hidden md:flex gap-6 z-auto">
           {navItems.map((item, index) => (
             <li key={index} className="relative">
               <button
@@ -137,14 +208,18 @@ function Header() {
               {openDropdown === index && (
                 <div className="absolute left-0 mt-2 w-64 bg-white shadow-xl border rounded-lg p-3 z-40">
                   {item.content.map((subItem, subIndex) => (
-                    <Link to={subItem.link}>
-                      <div
-                        key={subIndex}
-                        className="flex items-center gap-4 p-2 hover:bg-gray-100 cursor-pointer rounded-lg transition"
-                      >
+                    <Link
+                      to={subItem.link}
+                      key={subIndex}
+                      onClick={closeAllMenus}
+                    >
+                      <div className="flex items-center gap-4 p-2 hover:bg-gray-100 cursor-pointer rounded-lg transition">
                         <div>
                           <p className="font-semibold text-gray-800 font-axiformaMedium text-sm">
                             {subItem.name}
+                          </p>
+                          <p className="text-gray-500 text-xs font-soraRegular">
+                            {subItem.description}
                           </p>
                         </div>
                       </div>
@@ -197,7 +272,10 @@ function Header() {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="md:hidden absolute top-28 left-0 w-full bg-white shadow-lg z-50">
+        <div
+          ref={mobileMenuRef}
+          className="md:hidden absolute top-28 left-0 w-full bg-white shadow-lg z-50"
+        >
           <ul className="py-4 px-4 space-y-4">
             {navItems.map((item, index) => (
               <li key={index}>
@@ -218,19 +296,22 @@ function Header() {
                 {openMobileDropdown === index && (
                   <div className="ml-4 mt-2 space-y-4">
                     {item.content.map((subItem, subIndex) => (
-                      <div
+                      <Link
+                        to={subItem.link}
                         key={subIndex}
-                        className="flex items-center gap-4 p-2 hover:bg-gray-100 cursor-pointer rounded-lg transition"
+                        onClick={closeAllMenus}
                       >
-                        <div>
-                          <p className="font-semibold text-gray-800 font-axiformaMedium text-sm">
-                            {subItem.name}
-                          </p>
-                          <p className="text-gray-500 text-xs font-soraRegular">
-                            {subItem.description}
-                          </p>
+                        <div className="flex items-center gap-4 p-2 hover:bg-gray-100 cursor-pointer rounded-lg transition">
+                          <div>
+                            <p className="font-semibold text-gray-800 font-axiformaMedium text-sm">
+                              {subItem.name}
+                            </p>
+                            <p className="text-gray-500 text-xs font-soraRegular">
+                              {subItem.description}
+                            </p>
+                          </div>
                         </div>
-                      </div>
+                      </Link>
                     ))}
                   </div>
                 )}

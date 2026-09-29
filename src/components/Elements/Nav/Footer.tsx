@@ -30,16 +30,19 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to={""} className="hover:text-white block py-1 md:py-0">
+                <Link
+                  to={"/product?type=infrastructure"}
+                  className="hover:text-white block py-1 md:py-0"
+                >
                   Infrastructure & Asset Integrity
                 </Link>
               </li>
               <li>
                 <Link
-                  to={"/product?type=infrastructure"}
+                  to={"/contact"}
                   className="hover:text-white block py-1 md:py-0"
                 >
-                  Pimo Mafuta Store
+                  Contact Us
                 </Link>
               </li>
             </ul>
@@ -50,6 +53,7 @@ const Footer = () => {
         <div className="flex flex-wrap justify-center gap-4 md:gap-6 md:flex-nowrap">
           <Link
             to={"https://www.linkedin.com/company/pimo-mafuta-energies"}
+            target="_blank"
             className="p-2 rounded-full border border-gray-500 hover:border-white transition-colors"
           >
             <FaLinkedin className="text-gray-400 hover:text-white text-lg" />

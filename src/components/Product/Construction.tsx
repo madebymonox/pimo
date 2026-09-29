@@ -9,6 +9,7 @@ import cwdImage from "./../../assets/images/CASEBIT.jpg";
 const tabs = [
   { key: "trs", label: "TRS" },
   { key: "pds", label: "PDS" },
+  { key: "ilt", label: "ILT" },
   { key: "oms", label: "OMS" },
   { key: "cas", label: "CAS" },
   { key: "tis", label: "TIS" },
@@ -85,14 +86,20 @@ function Construction() {
                   conductors and so on.
                 </p>
 
-                <p className="text-gray-800 leading-relaxed font-axiformaBook">
+                <p className="text-gray-800 mb-4  leading-relaxed font-axiformaBook">
                   With the largest regional fleet of hydraulic hammers dedicated
                   to the oil & gas industry (including multiple units of S-90,
                   S-150 and S-200), we ensure our customers never have to wait
                   for service.
                 </p>
 
-                <p className="text-gray-800 leading-relaxed font-axiformaBook">
+                <p className="text-gray-800 mb-4  leading-relaxed font-axiformaBook">
+                  We also provide high-output Miller welding machines, supported
+                  by experienced and certified welders for well construction
+                  applications.
+                </p>
+
+                <p className="text-gray-800 mb-4  leading-relaxed font-axiformaBook">
                   Our experience ensures we deliver pile shoe deviation not more
                   than ±0.3° to the vertical ensuring the well is drilled
                   without any challenges.
@@ -110,6 +117,69 @@ function Construction() {
             </div>
           </div>
         );
+      case "ilt":
+        return (
+          <div className="min-h-screen bg-white flex flex-col items-center justify-center px-6 py-12">
+            <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+              {/* Left: Text */}
+              <div>
+                <h1 className="text-3xl md:text-4xl text-blue-900 mb-6 font-soraRegular">
+                  Internal Lifting Tool (ILT)
+                </h1>
+
+                <h2 className="text-lg font-axiformaBook text-blue-900 mb-3">
+                  Overview
+                </h2>
+
+                <p className="text-gray-800 mb-4 leading-relaxed font-axiformaBook">
+                  Our Internal Lifting Tool (ILT) is a highly reliable solution
+                  designed for the safe and efficient upending and lifting of
+                  conductors and heavy offshore structures. Engineered to
+                  significantly reduce operation time, the ILT eliminates the
+                  need for welding pad-eyes and shackles, improving both
+                  efficiency and safety during lifting operations.
+                </p>
+
+                <p className="text-gray-800 mb-4 leading-relaxed font-axiformaBook">
+                  The ILT is widely used for handling buoyancy tanks, jackets,
+                  modules, subsea manifolds, and other heavy components in
+                  offshore and subsea environments. With an excellent worldwide
+                  track record, the tool delivers dependable performance in
+                  demanding operational conditions.
+                </p>
+
+                <p className="text-gray-800 mb-4 leading-relaxed font-axiformaBook">
+                  <strong>Key Specifications</strong>
+                  <ul className="list-disc list-inside space-y-2 text-gray-800">
+                    <li>Pile range: 16" - 96" OD </li>
+                    <li>Lifting capacities: 200t - 2,000t </li>
+                    <li>Standard operating water depth: 500m </li>
+                    <li>
+                      Certified and designed in accordance with Lloyd's Lifting
+                      Appliance standards{" "}
+                    </li>
+                  </ul>
+                </p>
+
+                <p className="text-gray-800 mb-4 leading-relaxed font-axiformaBook">
+                  Our ILT combines robust engineering, operational efficiency,
+                  and proven reliability to support safe heavy lifting
+                  operations across the offshore industry.
+                </p>
+              </div>
+
+              {/* Right: Image */}
+              <div className="flex justify-center">
+                <img
+                  src={pdsImage}
+                  alt="Pile Driving Service"
+                  className="w-full max-w-md h-[500px] rounded shadow-lg object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        );
+
       case "oms":
         return (
           <div className="min-h-screen bg-white flex flex-col items-center justify-center px-6 py-12">
@@ -163,7 +233,7 @@ function Construction() {
       case "cas":
         return (
           <div className="min-h-screen bg-white flex flex-col items-center justify-center px-6 py-12">
-            <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+            <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               {/* Left: Text */}
               <div>
                 <h1 className="text-3xl md:text-4xl text-blue-900 mb-6 font-soraRegular">
@@ -212,7 +282,7 @@ function Construction() {
                 <img
                   src={casImage}
                   alt="Casing Accessories Supply"
-                  className="w-full max-w-md h-[500px] rounded shadow-lg object-cover"
+                  className="w-full max-w-full h-[280px] rounded shadow-lg object-cover"
                 />
               </div>
             </div>
@@ -297,7 +367,7 @@ function Construction() {
                 <img
                   src={cwdImage}
                   alt="Casing While Drilling"
-                  className="w-full max-w-md h-[500px] rounded shadow-lg object-cover"
+                  className="w-full max-w-md h-[580px] rounded shadow-lg object-cover"
                 />
               </div>
             </div>

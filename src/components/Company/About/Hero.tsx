@@ -3,7 +3,7 @@ import "./../../../App.css";
 function Hero() {
   return (
     <>
-      <section className="relative bg-green-950 h-80 w-full py-16 bgImage">
+      <section className="relative bg-green-950 h-96 w-full py-16 bgImage">
         {/* Black overlay */}
         <div className="absolute inset-0 bg-black/50"></div>
 
